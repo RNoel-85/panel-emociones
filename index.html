@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Emociones</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Mi Panel de Emociones</h1>
+    
+    <span id="date-display"></span>
+
+    <div class="emotion-grid">
+        <div class="emotion-item" data-emotion="feliz">
+            <img src="feliz.png" alt="Feliz" class="emotion-image">
+            <p>Feliz</p>
+        </div>
+        <div class="emotion-item" data-emotion="triste">
+            <img src="triste.png" alt="Triste" class="emotion-image">
+            <p>Triste</p>
+        </div>
+        <div class="emotion-item" data-emotion="cansado">
+            <img src="cansado.png" alt="Cansado" class="emotion-image">
+            <p>Cansado</p>
+        </div>
+        <div class="emotion-item" data-emotion="ansioso">
+            <img src="ansioso.png" alt="Ansioso" class="emotion-image">
+            <p>Ansioso</p>
+        </div>
+        <div class="emotion-item" data-emotion="aburrido">
+            <img src="aburrido.png" alt="Aburrido" class="emotion-image">
+            <p>Aburrido</p>
+        </div>
+        <div class="emotion-item" data-emotion="enojado">
+            <img src="enojado.png" alt="Enojado" class="emotion-image">
+            <p>Enojado</p>
+        </div>
+    </div>
+    
+    <div class="progress-section">
+        <div class="progress-group">
+            <p>Feliz:</p>
+            <div class="progress-container"><div class="progress-bar" id="feliz-bar"></div></div>
+            <span class="progress-value" id="feliz-value">0%</span>
+        </div>
+        <div class="progress-group">
+            <p>Triste:</p>
+            <div class="progress-container"><div class="progress-bar" id="triste-bar"></div></div>
+            <span class="progress-value" id="triste-value">0%</span>
+        </div>
+        <div class="progress-group">
+            <p>Cansado:</p>
+            <div class="progress-container"><div class="progress-bar" id="cansado-bar"></div></div>
+            <span class="progress-value" id="cansado-value">0%</span>
+        </div>
+        <div class="progress-group">
+            <p>Ansioso:</p>
+            <div class="progress-container"><div class="progress-bar" id="ansioso-bar"></div></div>
+            <span class="progress-value" id="ansioso-value">0%</span>
+        </div>
+        <div class="progress-group">
+            <p>Aburrido:</p>
+            <div class="progress-container"><div class="progress-bar" id="aburrido-bar"></div></div>
+            <span class="progress-value" id="aburrido-value">0%</span>
+        </div>
+        <div class="progress-group">
+            <p>Enojado:</p>
+            <div class="progress-container"><div class="progress-bar" id="enojado-bar"></div></div>
+            <span class="progress-value" id="enojado-value">0%</span>
+        </div>
+    </div>
+    
+    <button id="reset-button">Reiniciar Conteo</button>
+    
+    <script src="script.js"></script>
+</body>
+</html>
